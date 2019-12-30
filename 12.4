@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+string Quarter(double x, double y)
+{
+    if (x != 0 && y != 0)
+    {
+        if (x > 0 && y > 0)
+        {
+            return "1";
+        }
+        else if (x < 0 && y > 0)
+        {
+            return "2";
+        }
+        else if (x < 0 && y < 0){
+            return "3";
+        }
+        else{
+            return "4";
+        }
+            
+    }
+    else{
+        return "errore";
+    }
+    
+}
+
+int main()
+{
+    double x, y, i;
+    
+    for (i = 0; i < 3; i++)
+    {
+        cin >> x;
+        cin >> y;
+        cout << Quarter(x, y) << ends;
+    }
+
+}
