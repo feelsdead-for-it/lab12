@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+ double Fact2(int n)
+{
+	 double h;
+	h = 1;
+	if(n % 2 == 0)
+  {
+	for (int i = 2; i <=n; i= i+2)
+	{
+		h = h * i;
+	}
+	}
+	else
+	{
+		for (int i = 1; i <=n; i = i + 2)
+		{
+			h = h * i;
+		}
+	}
+
+	return h;
+}
+
+int main()
+{
+
+double a, b;
+	cin >> a ;
+	if (a > 0)
+	{
+		cout << Fact2(a);
+	}
+
+
+}
